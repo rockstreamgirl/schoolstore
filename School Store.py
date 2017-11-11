@@ -16,6 +16,8 @@ for name in products:
     print name
 
 name = raw_input('What is the order?')
+if name not in products:
+    name = raw_input ('*ERROR* What is the order?')
 price = products[name]
                        
 quantity = input ("How many?")

@@ -1,7 +1,7 @@
 
+total = 0.0
 print "*STORE ITEMS*"
 print ""
- 
 products = {
     'doritos': 1.00,
     'coffee': 2.00,
@@ -14,14 +14,19 @@ products = {
 
 for name in products:
     print name
+print ""
+end = False
+while end == False:
+    name = raw_input('What is the order (enter "end" when done)? ')
+    if name == 'end':
+        end = True
+    elif name not in products:
+        print ('*ERROR* Not a valid product ')
+    else:
+        price = products[name]                      
+        quantity = input ("How many? ")
+        total += price * quantity
 
-name = raw_input('What is the order?')
-if name not in products:
-    name = raw_input ('*ERROR* What is the order?')
-price = products[name]
-                       
-quantity = input ("How many?")
-total = price * quantity
 print total
 print ""
 

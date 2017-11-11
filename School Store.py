@@ -21,10 +21,19 @@ store=[doritos, coffee, coke, pepsi, pringles, gum, brownie]
 
 print ""
 order= input ("What is the order? ")
-print order
-
+if order != doritos:
+    if order != coffee:
+        if order != coke:
+            if order != pepsi:
+                if order != pringles:
+                    if order != gum:
+                        if order != brownie:
+                            input ("*ERROR* What is the order?")
+quantity = input ("How many?")
+total = order * quantity
+print total
 print ""
 
-c=input ("Change? *PLACE MONEY GIVEN* ")
-print c-order
+cash = input ("Change? *PLACE MONEY GIVEN* ")
+print cash - total
 

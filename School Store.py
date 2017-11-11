@@ -27,3 +27,4 @@ print ""
 
 c=input ("Change? *PLACE MONEY GIVEN* ")
 print c-order
+print "get out of here emily"

@@ -1,36 +1,25 @@
 
 print "*STORE ITEMS*"
 print ""
-print "doritos"
-print "coffee"
-print "coke"
-print "pepsi"
-print "pringles"
-print "gum"
-print "brownie"
+ 
+products = {
+    'doritos': 1.00,
+    'coffee': 2.00,
+    'coke': 1.00,
+    'pepsi':1.00,
+    'pringles': 0.50,
+    'gum': 0.25,
+    'brownie': 0.75
+    }
 
-doritos=1.00
-coffee=2.00
-coke=1.00
-pepsi=1.00
-pringles=0.50
-gum=0.25
-brownie=0.75
+for name in products:
+    print name
 
-store=[doritos, coffee, coke, pepsi, pringles, gum, brownie]
-
-print ""
-order= input ("What is the order? ")
-if order != doritos:
-    if order != coffee:
-        if order != coke:
-            if order != pepsi:
-                if order != pringles:
-                    if order != gum:
-                        if order != brownie:
-                            input ("*ERROR* What is the order?")
+name = raw_input('What is the order?')
+price = products[name]
+                       
 quantity = input ("How many?")
-total = order * quantity
+total = price * quantity
 print total
 print ""
 

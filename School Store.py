@@ -41,3 +41,5 @@ while run:
 
     cash = input ("Change? *PLACE MONEY GIVEN* ")
     print cash - total
+    print ""
+    print ""
